@@ -5,15 +5,7 @@ import { useRef, useEffect, useState } from "react";
 import "./chart.scss";
 
 const Chart = () => {
-  const [data, setData] = useState([
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
-    Math.random() * 100,
-  ]);
+  const [data, setData] = useState([25, 30, 45, 60, 10, 65, 75]);
   const svgRef = useRef();
   useEffect(() => {
     const svg = select(svgRef.current);
@@ -59,8 +51,9 @@ const Chart = () => {
       </svg>
       <button
         className="submit"
-        id="btn"
-        onClick={() => window.location.reload(false)}
+        onClick={() =>
+          setData(data.map((value) => (value = Math.random() * 100)))
+        }
       >
         Randomize
       </button>
