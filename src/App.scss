@@ -3,7 +3,7 @@ $fontVar: ("Roboto", sans-serif);
 * {
   margin: 0;
   font-family: $fontVar;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 .App {
   display: block;
@@ -42,7 +42,7 @@ h2 {
 label {
   display: inline-block;
   font-size: smaller;
-  margin-top: 10px;
+  margin-top: 15px;
   color: rgba(0, 0, 0, 0.5);
 }
 .submit {
@@ -50,7 +50,7 @@ label {
   background-color: rgb(44, 96, 255);
   color: white;
   margin-top: 20px;
-  padding: 10px 50px 10px 50px;
+  padding: 15px 50px 15px 50px;
   border-radius: 5px;
 }
 .submit :disabled,

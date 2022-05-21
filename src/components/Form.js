@@ -51,7 +51,7 @@ const Form = (props) => {
 
   return (
     <div>
-      <h2>Create Account</h2>
+      <h2>Create an account</h2>
       {!isValid && (
         <p className="error">Error While Entering Data Check And Try Again</p>
       )}
